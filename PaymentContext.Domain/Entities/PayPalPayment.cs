@@ -2,15 +2,15 @@ using System;
 using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Domain.Entities
-{     
+{
     public class PayPalPayment : Payment
     {
         public PayPalPayment(
-            string transactionCode,
+            string transactionCode, 
             DateTime paidDate, 
             DateTime expireDate, 
-            DateTime total, 
-            DateTime totalPaid, 
+            decimal total, 
+            decimal totalPaid, 
             string payer, 
             Document document, 
             Address address, 
@@ -22,12 +22,11 @@ namespace PaymentContext.Domain.Entities
                 payer, 
                 document, 
                 address, 
-                email)    
-        
+                email)
         {
             TransactionCode = transactionCode;
         }
 
-        public string TransactionCode { get; set; }
+        public string TransactionCode { get; private set; }
     }
 }

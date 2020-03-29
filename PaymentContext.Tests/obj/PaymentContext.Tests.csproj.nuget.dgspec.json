@@ -50,7 +50,7 @@
             },
             "flunt": {
               "target": "Package",
-              "version": "[1.0.4, )"
+              "version": "[1.0.2, )"
             }
           },
           "imports": [
@@ -109,7 +109,7 @@
             },
             "flunt": {
               "target": "Package",
-              "version": "[1.0.4, )"
+              "version": "[1.0.2, )"
             }
           },
           "imports": [
@@ -140,14 +140,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netcoreapp2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netcoreapp2.0": {
             "projectReferences": {
               "C:\\dev\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {
                 "projectPath": "C:\\dev\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj"
@@ -165,27 +165,29 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "netcoreapp2.0": {
           "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[1.1.18, )"
             },
             "MSTest.TestFramework": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[1.1.18, )"
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.2.0, )"
+              "version": "[15.3.0-preview-20170628-02, )"
             },
-            "coverlet.collector": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[2.0.0, )",
+              "autoReferenced": true
             },
             "flunt": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[1.0.2, )"
             }
           },
           "imports": [
@@ -198,11 +200,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }

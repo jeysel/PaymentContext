@@ -2,13 +2,16 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Flunt/1.0.4": {
+      "Flunt/1.0.2": {
         "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
         "compile": {
-          "lib/netstandard2.0/Flunt.dll": {}
+          "lib/netstandard1.3/Flunt.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Flunt.dll": {}
+          "lib/netstandard1.3/Flunt.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -39,7 +42,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "flunt": "1.0.4"
+          "flunt": "1.0.2"
         },
         "compile": {
           "bin/placeholder/PaymentContext.Shared.dll": {}
@@ -51,16 +54,16 @@
     }
   },
   "libraries": {
-    "Flunt/1.0.4": {
-      "sha512": "zsKA3Wol1+UeQBYtXuO56+ua6DBUpD5dcp3iAa86W5WcMLOWBMaDXKdqIrrLNgQUOW/U/svecb4ldgqwnC9XDQ==",
+    "Flunt/1.0.2": {
+      "sha512": "HtQBErf6cJewdP7LzLJEyehePdPKP4ieYoQP8DpiXB6qs1TeuHVF38Bw8TZzz9t7r2j+SWFRoMsU5oJvzSOeBg==",
       "type": "package",
-      "path": "flunt/1.0.4",
+      "path": "flunt/1.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "flunt.1.0.4.nupkg.sha512",
+        "flunt.1.0.2.nupkg.sha512",
         "flunt.nuspec",
-        "lib/netstandard2.0/Flunt.dll"
+        "lib/netstandard1.3/Flunt.dll"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -217,7 +220,7 @@
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "PaymentContext.Shared >= 1.0.0",
-      "flunt >= *"
+      "flunt >= 1.0.2"
     ]
   },
   "packageFolders": {
@@ -269,7 +272,7 @@
           },
           "flunt": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[1.0.2, )"
           }
         },
         "imports": [

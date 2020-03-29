@@ -1,7 +1,7 @@
 using System;
 using Flunt.Notifications;
 
-namespace PaymentContext.Shared.Entities 
+namespace PaymentContext.Shared.Entities
 {
     public abstract class Entity : Notifiable
     {
@@ -12,5 +12,4 @@ namespace PaymentContext.Shared.Entities
 
         public Guid Id { get; private set; }
     }
-
 }
